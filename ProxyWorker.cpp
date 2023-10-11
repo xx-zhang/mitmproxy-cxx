@@ -194,8 +194,8 @@ void ProxyWorker::InitSSLCtx()
 {
     if (m_ctx)
         return;
-
-    CRYPTO_malloc_init();
+    OPENSSL_malloc_init();
+    // https://www.openssl.org/docs/man1.1.0/crypto/OPENSSL_init_crypto.html;
     SSL_library_init();
     SSL_load_error_strings();
     ERR_load_BIO_strings();

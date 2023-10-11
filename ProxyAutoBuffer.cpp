@@ -1,3 +1,5 @@
+# include<cstring>
+
 #include "ProxyAutoBuffer.h"
 #include "ProxyException.h"
 

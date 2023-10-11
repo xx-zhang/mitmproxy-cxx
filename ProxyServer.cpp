@@ -1,7 +1,12 @@
+#include <iostream>
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <boost/bind.hpp>
+#include <signal.h>
+#include <unistd.h>
+
+
 #include "ProxyServer.h"
 #include "ProxyWorker.h"
 #include "ProxyException.h"

@@ -1,4 +1,5 @@
 #include <sstream>
+#include <cstdlib>
 #include "ProxyHeaders.h"
 
 static void strip(std::string& str)

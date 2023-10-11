@@ -2,8 +2,7 @@
 objects = proxy.o ProxyServer.o ProxyWorker.o ProxyHeaders.o ProxyAutoBuffer.o ProxyUri.o ProxyController.o
 
 proxy : $(objects) 
-	c++ -o proxy $(objects) -L/Users/gao/libboost/ -lboost_thread -lboost_system -lboost_regex\
-	 -L/Users/gao/srcs/openssl-1.0.1e/ -lssl -lcrypto -std=c++11
+	c++ -o proxy $(objects) -L/Users/gao/libboost/ -lboost_thread -lboost_system -lboost_regex -lssl -lcrypto -std=c++11
 
 proxy.o: ProxyServer.h ProxyException.h ProxyController.h
 ProxyServer.o: ProxyServer.h ProxyWorker.h ProxyException.h
