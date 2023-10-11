@@ -21,10 +21,17 @@ c++ -o proxy \
     -std=c++11
 ```
 
-## 使用Camke3 (RECOMAND)
+## 使用Camke3编译 (RECOMAND)
 ```
 mkdir build && cd build && cmake ../ && make 
 
+```
+
+## 开始运行和使用
+```
+# 注意 proxy 和 Cert目录在一个目录下。
+cp -r ./build/proxy . 
+./proxy 
 ```
 
 ## depends 

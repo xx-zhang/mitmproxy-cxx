@@ -3,6 +3,7 @@
 
 #include <map>
 #include <boost/thread.hpp>
+// #include <boost/noncopyable.hpp>
 #include <boost/utility.hpp>
 
 class ProxyWorker;
