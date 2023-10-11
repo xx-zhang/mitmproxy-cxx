@@ -1,5 +1,14 @@
-# 代理
+# mitmproxy-c++ 版本简易正向代理
 
+## 开发前的工作(Centos7)
+```bash
+yum -y install gcc gcc-c++ 
+#yum -y install epel-release 
+yum -y install boost boost-devel 
+
+```
+
+## 编译安装，使用gcc编译，方便调试
 ```
 c++ -o proxy \
     proxy.cpp \
@@ -10,15 +19,18 @@ c++ -o proxy \
     -lssl \
     -lcrypto \
     -std=c++11
-
 ```
 
+## 使用Camke3 (RECOMAND)
+```
+mkdir build && cd build && cmake ../ && make 
+
+```
 
 ## depends 
 - cpp 4.9.4
 - boost 1.62
 - openssl 1.1.1w
-
 
 ## hsts
 ```

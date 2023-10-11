@@ -6,7 +6,6 @@
 #include <signal.h>
 #include <unistd.h>
 
-
 #include "ProxyServer.h"
 #include "ProxyWorker.h"
 #include "ProxyException.h"

@@ -1,7 +1,7 @@
 # gen cert 
 
 ```bash
-mkdir -p ./certs &&  openssl req -x509 -nodes -days 365 \
+openssl req -x509 -nodes -days 365 \
 -newkey rsa:2048 \
 -subj "/C=CN/ST=HB/L=WH/O=baidu/OU=dev/CN=cert@baidu.com/emailAddress=cert@baidu.com" \
 -keyout ./privkey.pem \

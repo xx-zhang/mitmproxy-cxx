@@ -1,6 +1,5 @@
 #include "ProxyController.h"
 #include "ProxyServer.h"
-// #include <stdlib.h>
 #include <iostream>
 
 ProxyController& ProxyController::GetController()

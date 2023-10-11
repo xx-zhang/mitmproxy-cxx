@@ -1,8 +1,10 @@
 #include <iostream>
+#include <boost/thread.hpp>
+
 #include "ProxyException.h"
 #include "ProxyController.h"
 #include "ProxyHeaders.h"
-#include <boost/thread.hpp>
+
 
 static boost::mutex callback_mu;
 void onrequest(const char* data, size_t len)
